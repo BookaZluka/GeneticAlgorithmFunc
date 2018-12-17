@@ -1,4 +1,5 @@
 language: cpp
 
 rvm:
--g++
+- 2.2
+- g++
