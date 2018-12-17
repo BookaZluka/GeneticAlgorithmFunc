@@ -1,10 +1,10 @@
 language: cpp
 
 script:
-- cmake -H. -B_build -DCMAKE_INSTALL_PREFIX=_install -DBUILD_TESTS=1
+- cmake -H. -B_build -DCMAKE_INSTALL_PREFIX=_install -DBUILD_TESTS==1
 - cmake --build _build
-- cmake --build _build --target install=1
-- cmake --build _build --target test -- ARGS=--verbose=1
+- cmake --build _build --target install==1
+- cmake --build _build --target test -- ARGS=--verbose==1
 
 addons:
   apt:
